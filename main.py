@@ -14,11 +14,5 @@ if __name__ == "__main__":
         partresponses = MakeTranscript (filelist, folderpath) #make transcript
         write_json(f"{file}.json", partresponses) #Write transcript to json
         return partresponses 
-
-#path to participant wav file 
-    #Partpath = Path(f"{file}.json") 
-    #if Partpath.exists(): #Does the participant json file exist?
-        #partresponses = readjson (f"{file}.json") #if it does read in the json
-    #else: 
         
     partresponses= getTranscripts(file, folderpath) #if not make the transcript 
