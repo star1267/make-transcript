@@ -6,8 +6,8 @@ import os
 
 
 if __name__ == "__main__":
-    #// TODO It would be great if these could be commant window inputs
-    file = "101Session2Block2" #Name of participants wav file
+    file = input('What file do you want to transcribe?') #input participant number
+    #file = "101Session2Block2" #Name of participants wav file
 
     currentDir = os.getcwd()
     wavpath = os.path.join(currentDir, 'WavFiles')
