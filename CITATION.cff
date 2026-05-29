@@ -1,0 +1,19 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Make Transcripts
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Tess
+    family-names: Starr
+    email: tess.m.starr@gmail.com
+    affiliation: University of Michigan
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20414864
+repository-code: https://github.com/star1267/make-transcript
+license: MIT
