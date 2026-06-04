@@ -8,8 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
-
-COpysecrets.yaml
-
+*.yaml
 *.json
 *.wav
