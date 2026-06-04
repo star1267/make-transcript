@@ -5,7 +5,7 @@ import os
 
 #How to set up project
     #1. uv add -r requirments 
-    #2. ask tess for secrets.yaml 
+    #2. add your api key to secrets.yaml 
     #3. run code and it will make new folder "WavFiles" and throw and error
     #4. Add the wav files you want to transcribe to the "WavFiles" folder 
     #5. run again 
