@@ -102,7 +102,7 @@ txaio==25.12.2
 txtorcon==24.8.0
 typer==0.17.4
 typing-inspection==0.4.2
-typing_extensions==4.15.0
+typing-extensions>=4.14.0,<4.15.0
 tzdata==2026.2
 ujson==5.11.0
 urllib3==2.6.3
