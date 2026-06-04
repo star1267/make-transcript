@@ -3,21 +3,39 @@ from storage_handler import write_json
 from pathlib import Path
 import os 
 
+#How to set up project
+    #1. uv add -r requirments 
+    #2. ask tess for secrets.yaml 
+    #3. run code and it will make new folder "WavFiles" and throw and error
+    #4. Add the wav files you want to transcribe to the "WavFiles" folder 
+    #5. run again 
 
 
 if __name__ == "__main__":
-    file = input('What file do you want to transcribe?') #input participant number
-    #file = "101Session2Block2" #Name of participants wav file
 
     currentDir = os.getcwd()
     wavpath = os.path.join(currentDir, 'WavFiles')
     transpath = os.path.join(currentDir, 'transcripts')
+
+
+    try:
+        os.mkdir(wavpath)
+        print(f"Directory '{wavpath}' created successfully.")
+        raise ValueError("wav folder made now add wavfiles")
+    except FileExistsError:
+        print(f"Directory '{wavpath}' already exists.")
+
 
     try:
         os.mkdir(transpath)
         print(f"Directory '{transpath}' created successfully.")
     except FileExistsError:
         print(f"Directory '{transpath}' already exists.")
+
+
+
+    file = input('What file do you want to transcribe?') #input participant number
+    #file = "101Session2Block2" #Name of participants wav file
 
 
 
