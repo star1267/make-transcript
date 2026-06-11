@@ -1,7 +1,11 @@
 [project]
 name = "make-transcript"
 version = "0.1.0"
-description = "Add your description here"
+description = "A python script that turns wav files into json transcipts using elevenlabs"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "elevenlabs==2.42.0", 
+    "pyyaml", 
+    "python-dotenv"
+]
